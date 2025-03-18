@@ -1,0 +1,281 @@
+* {
+    box-sizing: border;
+}
+body {
+    font-size: 16px;
+    color: #fff;
+    background-color: #c61e24;
+    font-family: "Oxygen", sans-serif;
+}
+
+/* ------ HEADER SECTION-----*/
+#nav-header {
+    background-color: #f6b319;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+#brand-name {
+    float: right;
+}
+/***#collapse div {
+    float: left;
+}*****/
+#brand-name h1 {
+    color: #557c38;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+
+#tel {
+    text-align: right;
+    padding-left: 0;
+    margin-left: 5px;
+}
+#tel a {
+    background-color: #fff;
+    padding: 5px 5px 5px 5px;
+    text-decoration: none;
+    color: #c61e24;
+    font-size: 1.1em;
+    /******border: 1px solid black;*****/
+    box-shadow: 3px 3px #c61e24;
+    border-radius: 2px;
+}
+#brand-name a, #brand-name a:hover, #brand-name a:focus {
+    text-decoration: none;
+}
+#nav-list {
+    margin-top: 10px;
+    /*font-size: 1.1em;*/
+    color: #c61e24;
+}
+#nav-list a {
+    color: #c61e24;
+    text-align: center;
+    font-weight: 600;
+}
+#nav-list a:hover {
+    background-color: #fff;
+}
+.active {
+    background-color: #fff;
+}
+#phone {
+    text-align: right;
+}
+#phone a {
+    padding-bottom: 0;   
+}
+#phone div {
+    padding-right: 7px;
+}
+#phone a:hover {
+    background-color: #f6b319;
+    text-decoration: underline;
+} /********************************HEADER ENDS HERE********************/
+
+/*******************SECTION CAROUSEL COMMENCES*************/
+#carousel img {
+    height: 600px;
+    margin-bottom: 10px;
+}
+
+/*****************PAGE POINTER******************/
+
+#menu-pointer, #specials-pointer, #map-pointer {
+    height: 250px;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 10px;
+}
+#menu-pointer {
+    background: url(../images/menu\ 1.webp) no-repeat;
+    background-position: center;
+}
+
+#menu-pointer:hover, #specials-pointer:hover, #map-pointer:hover {
+    box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#pointer a {
+    text-decoration: none;
+}
+#menu-pointer span, #specials-pointer span, #map-pointer span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #3f0c1f;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .7;
+}
+
+#specials-pointer {
+    background: url(../images/menu\ 2.webp) no-repeat;
+    background-position: center;
+}
+
+/*********FOOTER**************/
+
+#footer {
+    background-color: #222;
+    padding-top: 10px;
+}
+#hours span, #address span {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+#address p {
+    font-size: .8em;
+    font-style: italic;
+    color: #557c38;
+    margin-top: 10px;
+}
+#testimonial {
+    font-size: .9em;
+    font-style: italic;
+}
+#copyright {
+    font-size: .7em;
+    padding-top: 10px;
+}
+
+#footer hr {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}                        /*********FOOTER ENDS**********/
+
+/****************MENU CARTEGORY PAGE*****************/
+#lunch {
+    height: 150px;
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 15px;
+    margin-top: 10px;
+    background: url(../images/menu\ 2.webp) no-repeat;
+    background-position: center;
+}
+#lunch span {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    background-color: #3f0c1f;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .7;
+}
+
+/* -------------------SINGLE-CARTEGORY PAGE--------------- */
+#caption {
+    background-color: #cccccc;
+    color: #3f0c1f;
+}
+#caption h4 {
+    padding-top: 10px;
+}
+#single-page-caption {
+    margin-bottom: 10px;
+    margin-top: 5px;
+    font-size: .9em;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+#single-page-caption p {
+    margin: auto;
+}
+#single-1a {
+    height: 150px;
+    border: 1px solid #3f0c1f;
+    background: url(../images/menu\ 1.webp) no-repeat;
+    background-position: center;
+    margin-bottom: 15px;
+    position: relative;
+}
+#single-1a span#price {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #3f0c1f;
+    text-align: center;
+    opacity: .8;
+    font-weight: 600;
+}
+#single-1a span#serial-number {
+    position: absolute;
+    right: 0;
+    background-color: #222;
+    padding: 5px;
+    font-weight: 600;
+}
+
+/*------------------MEDIA QUERRIES----------------*/
+
+/***********Large devices only****************/
+@media (min-width: 1200px) {
+    #nav-header .container {
+        min-width: 1200px
+    }
+    #pointer img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+/**************Medium devices only***************/
+@media (min-width: 992px) and (max-width: 1199px) {
+    #nav-header .container {
+        min-width: 992px
+    }
+    #brand-logo img {
+        width: 100px;
+        height: 100px;
+    }
+ }
+
+
+/***************Small devices only*****************/
+@media (min-width: 768px) and (max-width: 991px) {
+    #nav-header .container {
+        min-width: 768px
+    }
+    #carousel img {
+        height: 500px;
+    }
+    #tel a {
+        font-size: 1.3em;
+    }
+}
+
+/****************Extra Small devices**************/
+@media (max-width: 767px) {
+    #nav-header {
+        padding-top: 10px;
+        /**height: 200px;**/
+    }
+    #brand-name h1 {
+        padding-top: 10px;
+        font-size: 5vw;
+    }
+    #brand-name p {
+        font-size: 3.5vw;
+    }
+    #carousel img {
+        height: 300px;
+    }
+    #tel a {
+        font-size: 4vw;
+    }
+}
