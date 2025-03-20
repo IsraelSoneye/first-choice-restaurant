@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>first_choice_restaurant</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+        <nav class="navbar navbar-default navbar-expand-lg">
+            <div id= "nav-header" class="container-fluid">
+                <span id="brand">
+                    <a id = "brand-logo" class="d-none d-md-inline" href="index.html" >
+                        <img src="images/First_Choice_new.png" alt="Logo" width="160" height="150" class="d-inline-block align-text-top">             
+                    </a>
+                    <div id="brand-name" class="navbar-brand">  <!--BRAND NAME-->
+                        <a href="index.html"><h1>FIRST CHOICE RESTAURANT</h1></a>
+                        <p id="kosher">Kosher Certified</p>
+                        <div id="tel" class="d-lg-none">
+                          <a href="tel:08068507389">+234806-850-7389</a>
+                          <span id="tel-span">*We Deliver</span>
+                        </div>                        
+                      </div>
+                    </span>
+                <span id="collapse">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul id="nav-list" class="navbar-nav">
+                          <li id="home" class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house-fill" viewBox="0 0 16 16">
+                                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                                  </svg><br>Home</a>
+                          </li>
+                          <li id="menu" class="nav-item">
+                            <a class="nav-link active" href="menu-cartegory.html">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-menu-up" viewBox="0 0 16 16">
+                                    <path d="M7.646 15.854a.5.5 0 0 0 .708 0L10.207 14H14a2 2 0 0 0 2-2V3a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3.793zM1 9V6h14v3zm14 1v2a1 1 0 0 1-1 1h-3.793a1 1 0 0 0-.707.293l-1.5 1.5-1.5-1.5A1 1 0 0 0 5.793 13H2a1 1 0 0 1-1-1v-2zm0-5H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1zM2 11.5a.5.5 0 0 0 .5.5h8a.5.5 0 0 0 0-1h-8a.5.5 0 0 0-.5.5m0-4a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11a.5.5 0 0 0-.5.5m0-4a.5.5 0 0 0 .5.5h6a.5.5 0 0 0 0-1h-6a.5.5 0 0 0-.5.5"/>
+                                  </svg><br>Menu</a>
+                          </li>
+                          <li id="about" class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-info-circle-fill" viewBox="0 0 16 16">
+                                    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2"/>
+                                  </svg><br>About</a>
+                          </li>
+                          <li id="award" class="nav-item">
+                            <a class="nav-link" href="#">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-award-fill" viewBox="0 0 16 16">
+                                    <path d="m8 0 1.669.864 1.858.282.842 1.68 1.337 1.32L13.4 6l.306 1.854-1.337 1.32-.842 1.68-1.858.282L8 12l-1.669-.864-1.858-.282-.842-1.68-1.337-1.32L2.6 6l-.306-1.854 1.337-1.32.842-1.68L6.331.864z"/>
+                                    <path d="M4 11.794V16l4-1 4 1v-4.206l-2.018.306L8 13.126 6.018 12.1z"/>
+                                  </svg><br>Award</a>
+                          </li>
+                          <li id="phone" class="nav-item d-none d-lg-block">
+                            <a class="nav-link" href="tel:+2348068507389" target="_blank">
+                                <span>+234806-850-7389</span></a><div>*We deliver</div>
+                          </li>
+                        </ul>
+                    </div>   
+                  </span>    
+            </div>
+          </nav>                  
+            </div>
+        </nav>
+    </header>
+    <section class="container-fluid text-center"><h2 id="title">Menu Cartegory</h2>
+        <div id="" class="row">
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+            <div id="" class="col-lg-2 col-md-3 col-sm-6 col-xs-12">
+                <a id="menu-list" href="single-cartegory.html"><div id="lunch">
+                    <span>Lunch</span>
+                </div>
+                </a>
+            </div>
+        </div>
+    </section>
+    <footer id="footer"> <!-----FOOTER----->
+        <div id="" class="container-fluid">
+            <div id="" class="row text-center">
+                <section id="hours" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <span><em>Hours:</em></span> <br>
+                  Mon. - Thurs: 8.00am - 8.00pm <br> 
+                  Fri: 8.00am - 11.00pm <br>
+                  Sat.: 10.00am - 6.00pm <br>
+                  Sun.: Closed!
+                  <hr class="d-block d-sm-none">
+                </section>
+                <section id="address" class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                  <span><em>Address:</em></span> <br>
+                  Km 5, Ayetoro-Abeokuta Road, <br>
+                  Yewa Central Hotel park, <br>
+                  Ayetoro, <br>
+                  Yewa North, Ogun State.
+                  <p>
+                    *Delivery are within 3-4 miles, with minimun order of $20 plus $3 charge for all delivery
+                  </p>
+                  <hr class="d-block d-sm-none">
+                </section>
+                <section id="testimonial" class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+                  <hr class="d-none d-sm-block d-md-none">
+                  <p>
+                    The best restaurant for both local and foreign dishes I've been to!
+                    And that's saying a lot, since I've been to many! <br><span>-Desmond</span>
+                  </p>
+                  <p>
+                    Amazing food! Great Service! Couldn't ask for more! I'll come back again and again.
+                    <br>
+                  <span>-Stephen Bature</span>
+                  </p>
+                </section>
+                <div id="copyright">
+                  &copy; first choice restaurant (2024)
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
